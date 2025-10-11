@@ -218,8 +218,6 @@ address {
 }
 
 
-
-
 /* Features */
 .features {
     padding-top: 120px;
@@ -601,14 +599,14 @@ margin-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
-    /* pointer-events: none; */
+    opacity: 0;
+    pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-overlay.is-open {
+.modal-overlay.is-open {
     opacity: 1;
-    pointer-events: auto;} */
+    pointer-events: auto;}
 
 .modal {
     position: absolute;
@@ -863,4 +861,65 @@ border: 1px solid #4d5ae5;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+
+.container {
+    width: 100%;
+} 
+
+ .nav-list {
+    display: none;
+ }
+
+ .contact-list {
+     display: none;
+ }
+
+ .nav {
+    margin-top: 16px;
+    margin-bottom: 16px;
+ }
+
+ .header {
+    position: relative;
+ }
+
+ .hamburger {
+    position: absolute;
+    display: flex;
+    top: 16px;
+    right: 16px;
+ }
+
+ .hero {
+    width: 320px;
+    height: 432px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-small.jpg);
+ }
+
+ 
+  .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+        text-align: center;
+        width: 216px;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+  }
+  
+  .btn {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
 }
