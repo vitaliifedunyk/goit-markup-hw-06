@@ -960,9 +960,99 @@ border: 1px solid #4d5ae5;
   .feature-item {
     width: 100%;
     display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .team{
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .team-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 72px;
+    width: 100%;
+  }
+  
+  .team-card {
+    width: 100%;
+  }
+
+  .team-role {
+    margin-bottom: 8px;
+  }
+
+  .team-img {
+    width: 100%;
+  }
+
+  .portfolio {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 72px;
+  }
+
+  .footer .logo-container {
+    margin: 0;
+  }
+
+  .footer .logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+
+  .footer-text-right {
+    text-align: center;
+  }
+
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    font-size: 12px;
+  }
+
+  .btn-subscribe {
+    border-radius: 4px;
+    padding-block: 8px;
+    padding-inline: 24px;
+    width: 165px;
+    height: 40px;
   }
 }
