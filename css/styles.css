@@ -922,4 +922,47 @@ border: 1px solid #4d5ae5;
     margin-top: 72px;
     margin-bottom: 72px;
   }
+
+  .feature-icon-container {
+    display: none;
+  }
+
+  .features {
+    padding: 96px 16px;
+  }
+
+  .features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .feature-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+  }
+
+  .feature-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    width: 288px;
+  }
+
+  .feature-item {
+    width: 100%;
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 8px;
+  }
 }
