@@ -867,10 +867,6 @@ border: 1px solid #4d5ae5;
     display: none;
 }
 
-.menu {
-    display: none;
-}
-
 @media screen and (max-width: 320px) {
 
 .container {
@@ -908,6 +904,8 @@ border: 1px solid #4d5ae5;
     position: relative;
     width: 320px;
     height: 640px;
+    padding-left: 0;
+    padding-right: 0;
  }
 
  .menu-icon-close {
@@ -945,7 +943,7 @@ border: 1px solid #4d5ae5;
  .nav-list-menu .nav-link-menu {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
  }
@@ -989,6 +987,7 @@ border: 1px solid #4d5ae5;
     flex-direction: row;
     gap: 40px;
     padding-top: 48px;
+    padding-bottom: 40px;
   }
 
   .menu-social-item {
@@ -1035,7 +1034,7 @@ border: 1px solid #4d5ae5;
     text-align: center;
     width: 216px;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
   }
   
