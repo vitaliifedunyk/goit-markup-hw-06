@@ -45,7 +45,26 @@ img {
   padding-bottom: 120px;
 }
 
-/* Header */
+/* Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hamburger,
+.menu {
+  display: none;
+}
+
+/* #region header */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -152,8 +171,9 @@ address {
 .contact-link:focus {
   color: #404bbf;
 }
+/* #endregion header */
 
-/* Hero */
+/* #region hero */
 .hero {
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -212,8 +232,9 @@ address {
 .btn:focus {
   background-color: #404bbf;
 }
+/* #endregion hero */
 
-/* Features */
+/* #region features */
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -255,8 +276,9 @@ address {
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
 }
+/* #endregion features */
 
-/* Team */
+/* #region team */
 .team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -340,8 +362,9 @@ address {
 .team-social-link svg {
   fill: #f4f4fd;
 }
+/* #endregion team */
 
-/* Portfolio */
+/* #region portfolio */
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -416,8 +439,9 @@ address {
 .portfolio-img-container:hover .portfolio-img-text {
   transform: translateY(0%);
 }
+/* #endregion portfolio */
 
-/* Footer */
+/* #region footer */
 .footer {
   background-color: #2e2f42;
   padding-top: 100px;
@@ -571,8 +595,9 @@ address {
 .footer-subscribe-svg {
   margin-left: 16px;
 }
+/* #endregion footer */
 
-/* Overlay */
+/* #region modal-overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -837,25 +862,7 @@ textarea {
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* Utilities */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.hamburger,
-.menu {
-  display: none;
-}
+/* #endregion modal-overlay */
 
 @media screen and (max-width: 320px) {
   .container {
@@ -868,6 +875,7 @@ textarea {
     display: none;
   }
 
+  /* #region header   */
   .nav-list {
     display: none;
   }
@@ -891,8 +899,9 @@ textarea {
     top: 16px;
     right: 16px;
   }
+  /* #endregion header   */
 
-  /* Hero */
+  /* #region hero */
   .hero {
     width: 320px;
     height: 432px;
@@ -921,7 +930,9 @@ textarea {
     margin-top: 72px;
     margin-bottom: 72px;
   }
-  /* Features */
+  /* #endregion hero */
+
+  /* #region features */
   .feature-icon-container {
     display: none;
   }
@@ -964,8 +975,9 @@ textarea {
     flex-direction: column;
     gap: 8px;
   }
+  /* #endregion features */
 
-  /* Team */
+  /* #region team */
   .team {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -998,14 +1010,16 @@ textarea {
   .team-img {
     width: 100%;
   }
+  /* #endregion team */
 
-  /* Portfolio */
+  /* #region portfolio */
   .portfolio {
     padding-top: 90px;
     padding-bottom: 90px;
   }
+  /* #endregion portfolio */
 
-  /* Footer */
+  /* #region footer */
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1059,8 +1073,9 @@ textarea {
     width: 165px;
     height: 40px;
   }
+  /* #endregion footer */
 
-  /* Modal */
+  /* #region modal */
   .modal {
     width: 288px;
     margin: 8px 16px;
@@ -1068,8 +1083,9 @@ textarea {
     left: auto;
     transform: none;
   }
+  /* #endregion modal */
 
-  /* Menu */
+  /* #region menu */
   .menu {
     display: flex;
     position: relative;
@@ -1186,12 +1202,155 @@ textarea {
   .menu-social-link svg {
     fill: #f4f4fd;
   }
+  /* #endregion menu */
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 100%;
+    max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0;
   }
+
+  /* #region header */
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .header .container {
+    height: 72px;
+  }
+
+  .nav {
+    gap: 120px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav-list {
+    margin: 0;
+  }
+
+  .contact-list {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-link {
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+  }
+  /* #endregion header */
+
+  /* #region hero */
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  /* #endregion hero */
+
+  /* #region features */
+  .features {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .feature-icon-container {
+    display: none;
+  }
+
+  .features-list {
+    flex-wrap: wrap;
+  }
+
+  .feature-item {
+    width: 356px;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .feature-text {
+    font-weight: 500;
+  }
+
+  .feature-title {
+    margin: 0;
+    font-weight: 736;
+    font-size: 36px;
+  }
+  /* #endregion features */
+
+  /* #region team */
+  .team {
+    padding: 0;
+  }
+  .team .container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .team-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .team-card {
+    width: 264px;
+    height: 428px;
+  }
+  /* #endregion team */
+
+  /* #region portfolio */
+
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
+  }
+  /* #endregion portfolio */
+
+  /* #region footer */
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .subscribe-container {
+    margin: 0;
+    display: flex;
+    padding-top: 48px;
+  }
+  .footer .logo-container {
+    margin: 0;
+  }
+  /* #endregion footer */
 }
