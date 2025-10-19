@@ -1205,7 +1205,7 @@ textarea {
   /* #endregion menu */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     max-width: 100%;
     padding-left: 16px;
