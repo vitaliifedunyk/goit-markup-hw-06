@@ -905,11 +905,6 @@ textarea {
     padding: 0;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-small.jpg);
   }
 
   .hero-title {
@@ -1386,4 +1381,14 @@ textarea {
     width: calc((100% - 48px) / 3);
   }
   /* #endregion portfolio */
+}
+
+@media (min-resolution: 2x) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
+  }
 }
