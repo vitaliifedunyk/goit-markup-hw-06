@@ -833,7 +833,8 @@ button {
     gap: 120px;
   }
 
-  .footer-tab {
+  .subscribe-container #email-subscribe {
+    width: 264px;
   }
 }
 
