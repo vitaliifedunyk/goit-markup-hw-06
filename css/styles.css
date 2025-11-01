@@ -313,6 +313,7 @@ button {
     width: 100%;
     height: auto;
   }
+
   .hero-title {
     margin-bottom: 48px;
   }
@@ -815,13 +816,15 @@ button {
     gap: 24px;
   }
 
-  .subscribe-input {
+  .subscribe-content #email-subscribe {
     width: 264px;
   }
+
   .subscribe-form {
     flex-direction: row;
     gap: 24px;
   }
+
   .btn-subscribe-primary {
     margin: 0;
   }
