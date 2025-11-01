@@ -293,7 +293,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
     height: auto;
   }
   .hero-title {
@@ -308,7 +309,8 @@ button {
   .hero {
     padding-bottom: 188px;
     padding-top: 188px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: auto;
   }
   .hero-title {
