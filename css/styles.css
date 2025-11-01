@@ -49,9 +49,6 @@ button {
   overflow: hidden;
 }
 
-.menu {
-  display: none;
-}
 /* #endregion common */
 
 /* #region container */
@@ -1257,6 +1254,18 @@ textarea {
 
 .menu-social-link svg {
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .menu {
+    display: none;
+  }
 }
 /* #endregion menu */
 
